@@ -1,0 +1,110 @@
+.page-content {
+    width: 1200px;
+    margin: 36px auto;
+}
+
+.vendor-details h2 {
+    font-weight: 400;
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+.vendor-details .contact-name {
+    font-size: 21px;
+    font-size: 1.3125rem;
+}
+
+.vendor-details span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.vendor-details .additional-info {
+    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.edit-vendor-container {
+    float: right;
+}
+
+#edit-vendor {
+    padding: 12px 18px;
+    display: inline-block;
+}
+
+#edit-vendor img {
+    margin-right: 8px;
+}
+
+#edit-vendor:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.charts-panels {
+    margin-top: 36px;
+}
+
+.list-container {
+    margin-top: 36px;
+}
+
+.list-filter-panel {
+    margin-bottom: 12px;
+}
+
+.list-label, .chart-label {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: 48px;
+    padding: 0 2px 5px 2px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+}
+
+.list-label:hover {
+    cursor: pointer;
+}
+
+.list-label.selected:hover {
+    cursor: auto;
+}
+
+#member-list-panel, #providers-list-panel {
+    display: none;
+}
+
+.list-item {
+    width: 30%;
+    float: left;
+    padding: 12px;
+    margin: 8px 16px 8px 0;
+}
+
+.list-item .address-main {
+    font-size: 21px;
+    font-size: 1.3125rem;
+}
+
+.list-item .additional-info {
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+.list-item .additional-info:before {
+    content: '(';
+}
+
+.list-item .additional-info:after {
+    content: ')';
+}
+
+.warning-label {
+    float: right;
+    font-size: 18px;
+}

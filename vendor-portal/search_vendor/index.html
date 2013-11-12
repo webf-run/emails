@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Search Vendor Page</title>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+
+        <link rel="stylesheet" href="../commons/typeface.css" />
+        <link rel="stylesheet" href="../commons/reset.css" />
+        <link rel="stylesheet" href="../commons/colors.css" />
+        <link rel="stylesheet" href="../commons/top-header.css" />
+        <link rel="stylesheet" href="../commons/page-navigation.css" />
+        <link rel="stylesheet" href="style.css" />
+        
+        <script type="text/javascript" src="../commons/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="page-container">
+
+            <div class="page-header clearfix">
+
+                <div class="user-panel">
+                    <div class="logged-user-portrait">
+                        <img alt="Logged-in user" src="../resources/images/user-icon.png">
+                    </div>
+                    <div class="user-details">
+                        <h3>Admin</h3>
+                        <p>Management Application</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="application-header">
+                        <img alt="Application logo" class="application-logo" src="../resources/images//logo-black.png">
+                        <span>Application Name</span>
+                    </h1>
+                </div>
+
+
+            </div>
+
+            <nav class="page-navigation">
+                <ul class="clearfix">
+                    <li class="navigaation-item active-menu"><a href="#">Vendors</a></li>
+                    <li class="navigaation-item"><a href="#">Providers</a></li>
+                    <li class="navigaation-item"><a href="#">Members</a></li>
+                    <li class="navigaation-item"><a href="#">Reports</a></li>
+                    <li class="navigaation-item"><a href="#">Correspondences</a></li>
+                    <li class="navigaation-item"><a href="#">Payments</a></li>
+                </ul>
+            </nav>
+
+            <section class="page-content">
+
+                <div class="create-vendor-container">
+                    <a id="create-vendor" class="green-button button" href="#">Create New Vendor</a>
+                </div>
+
+                <div class="search-container clearfix">
+                    <div class="simple-search-container">
+                        <input type="text" id="vendor-search-input" placeholder="Search vendor by Name, Tax Id or Type">
+                        <button class="search-button" type="submit">
+                            <img alt="" src="../resources/images/search.png">
+                        </button>
+                        <a href="#" class="search-toggle">Advance search</a>
+                    </div>
+                    <div class="advanced-search-container">
+                        <ul>
+                            <li class="search-list-item clearfix">
+                                Advance search options
+                            </li>
+                            <li class="search-list-item clearfix">
+                                <ul class="sub-list">
+                                    <li><input type="text" placeholder="Vendor Name" /></li>
+                                    <li><input type="text" placeholder="Vendor Number" /></li>
+                                    <li><input type="text" placeholder="Tax Id" /></li>
+                                </ul>
+                            </li>
+                            <li class="search-list-item clearfix">
+                                <ul class="sub-list">
+                                <li><input type="text" placeholder="NPI" /></li>
+                                <li><input type="text" placeholder="Alias Name" /></li>
+                                <li><input type="text" placeholder="Vendor Type" /></li>
+                                </ul>
+                            </li>
+                            <li class="search-list-item clearfix">
+                                <button class="button green-button">Search</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="search-result-container">
+                    <table class="search-table">
+                        <thead>
+                            <tr>
+                                <th class="checkbox-head">
+                                    <img src="../resources/images/check.png"/>
+                                </th>
+                                <th class="name-head">Name</th>
+                                <th class="email-head">Email</th>
+                                <th class="phone-head">Phone No</th>
+                                <th class="date-head">Start date</th>
+                                <th class="tin-head">UID</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                            <tr>
+                                <td class="table-checkbox">
+                                    <img src="../resources/images/check-green.png"/>
+                                </td>
+                                <td class="table-name">
+                                    <h3>Vendor Name</h3>
+                                    <p>Patil, Harshal</p>
+                                </td>
+                                <td class="table-item">example@example.com</td>
+                                <td class="table-item">(888)-999-0000</td>
+                                <td class="table-item">2011 Jan, 11</td>
+                                <td class="table-item">1234</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="pagination-container clearfix">
+                    <ul class="pagination-list">
+                        <li><a href="#">&laquo;</a></li>
+                        <li class="selected-page"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">15</a></li>
+                        <li><a href="#">16</a></li>
+                        <li><a href="#">&raquo;</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </div>
+
+    </body>
+
+</html>

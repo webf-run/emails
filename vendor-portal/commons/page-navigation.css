@@ -1,0 +1,20 @@
+.page-navigation {
+    margin-top: 18px;
+}
+
+.page-navigation ul {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.navigaation-item {
+    float: left;
+}
+
+.navigaation-item > a {
+    display: block;
+    padding: 20px 24px;
+    font-size: 21px;
+    font-size: 1.3125rem;
+    font-weight: 400;
+}

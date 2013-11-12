@@ -1,0 +1,190 @@
+.dark-yellow
+{
+    background-color: #3A3A3A;
+    color: #FFFFFF;
+}
+
+/* Login Page CSS   */
+.dark-yellow .main-logo, .dark-yellow .login-page-title
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.dark-yellow .login-banner-message
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.dark-yellow a.login-hyperlink
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.dark-yellow a.login-hyperlink:hover
+{
+    background-color: #D68008;
+}
+
+.dark-yellow a.login-hyperlink:active
+{
+    background-color: #D5D5D5;
+}
+.dark-yellow input[type="submit"], .dark-yellow input[type="button"], .dark-yellow button[type="button"]
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.dark-yellow input[type="submit"]:hover, .dark-yellow input[type="button"]:hover, .dark-yellow button[type="button"]:hover
+{
+    background-color: #D68008;
+}
+
+.dark-yellow input[type="submit"]:active, .dark-yellow input[type="button"]:active, .dark-yellow button[type="button"]:active
+{
+    background-color: #D5D5D5;
+}
+
+.dark-yellow input[type="text"]:focus, .dark-yellow input[type="password"]:focus
+{
+    border-color: #A0A0A0;
+    border-bottom-color: #F89406;
+}
+
+/* Login Page CSS */
+.dark-yellow .login-controls-panel
+{
+    color: #FFFFFF;
+}
+
+/* Home Page CSS */
+.dark-yellow .page-top
+{
+    color: #000000;
+}
+
+.dark-yellow .user-panel .logged-user-portrait
+{
+    background-color: #F89406;
+}
+
+.dark-yellow .search-form .search-button
+{
+    background: #F89406;
+}
+
+.dark-yellow .search-form input[type="text"]:focus
+{
+    border-bottom-color: #F89406;
+}
+
+.dark-yellow .navigation-menu > li
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.dark-yellow .navigation-menu > li:hover
+{
+    /*#C0C0C0 or #898989*/
+    background-color: #D2D2D2;
+}
+
+.dark-yellow .navigation-menu > li ul > li
+{
+    /*Try #898989 for backgroud*/
+    background-color: #D2D2D2;
+    color: #2A2A2A;
+}
+
+.dark-yellow .navigation-menu > li a
+{
+    color: #FFFFFF;
+}
+
+.dark-yellow .navigation-menu > li ul li:first-child
+{
+    border-top-color: #F89406;
+}
+
+.dark-yellow .navigation-menu > li ul li:hover
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.dark-yellow .slideshow ul.slideshow-content li .slideshow-message-panel
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.dark-yellow .slideshow ul.slideshow-navigation li
+{
+    background-color: #F89406;
+}
+
+.dark-yellow .content-terms li:hover, .dark-yellow .content-terms li.file-resource:hover
+{
+    background-color: #D2D2D2;
+    color: #000000;
+}
+
+
+.dark-yellow .whats-recent
+{
+    border: 1px solid #898989;
+}
+
+.dark-yellow .whats-recent .activity-portrait img
+{
+    background-color: #F89406;
+}
+
+.dark-yellow .whats-recent ul li:hover
+{
+    background-color: #D2D2D2;
+    color: #000000;
+}
+
+.dark-yellow .filters span
+{
+    color: #888888;
+}
+
+.dark-yellow .filters span:first-child
+{
+    color: #FFFFFF;
+}
+
+.dark-yellow .filters span:hover
+{
+    color: #FFFFFF;
+}
+
+.dark-yellow .list-item
+{
+    background-color: #555555;
+    border-color: #898989;
+}
+
+.dark-yellow .list-item:hover
+{
+    background-color: #D2D2D2;
+    color: #000000;
+}
+
+/* Dark yellow specific - Override default one */
+.dark-yellow .content-documents, .dark-yellow .content-terms, .dark-yellow  .new-company
+{
+    border-color: #898989;
+}
+
+/* Background images and related resources */
+.dark-yellow .content-terms li
+{
+    background-image: url('../../resources/icons/theme-specific/light-yellow-folder.png'); /* Unable to convert this to percent based scale */
+}

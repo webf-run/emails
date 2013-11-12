@@ -1,0 +1,259 @@
+.page-container
+{
+    min-width: 960px;
+}
+
+.slideshow
+{
+    overflow: hidden;
+    position: relative;
+    margin: 0 0.416667%;    /* 6px / 1440px */
+}
+
+.slideshow ul.slideshow-content
+{
+    overflow: hidden;
+}
+
+.slideshow ul.slideshow-content li
+{
+    position: relative;
+    float: left;
+    display: none;
+}
+
+.slideshow ul.slideshow-content li:first-child
+{
+    display: block;
+}
+
+.slideshow ul.slideshow-content li .slideshow-message-panel
+{
+    left: 8.333334%;     /* 120px / 1440px */
+    top: 37.037037%;     /* 180px / 486px */
+    position: absolute;
+    max-width: 350px;
+    z-index: 2;
+    padding: 0.833334%;     /* 12px / 1440px */
+}
+
+.slideshow ul.slideshow-content li .slideshow-message-panel p
+{
+    margin-top: 3.428572%;      /* 12px / 350px */
+}
+
+.slideshow ul.slideshow-navigation
+{
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+}
+
+.slideshow ul.slideshow-navigation li
+{
+    float: right;
+    width: 30px;        /* The measurements here will be kept constant. Will be managed via media queries */
+    margin: 0 6px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.slideshow ul.slideshow-navigation li img
+{
+    max-width: 100%;
+}
+
+
+.home-content
+{
+    overflow: auto;
+    margin: 1.666667% 0;    /* 24px / 1440px */
+}
+
+.content-terms
+{
+    float: right;
+    width: 34.9%;
+    margin-right: 0.416667%;    /* 6px / 1440px */
+    
+    /* Either border or background */
+    /*background-color: #EEEEEE;*/
+    border: 1px solid #D2D2D2;
+}
+
+.content-terms li
+{
+    margin-top: 2.39%;        /* 12px / 503px */
+    padding: 12px;              /* This is complecated scenario. Needs some rework to design this thing. */
+    padding-left: 84px;
+    background: transparent 6px 16px no-repeat none;    
+    
+    transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    -ms-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -webkit-transition: background-color 0.3s ease-out;
+    
+    cursor: pointer;
+}
+
+.content-terms li.file-resource
+{
+    background: transparent 14px 16px no-repeat url('../resources/icons/adobe-pdf.png');
+}
+
+.content-terms h2
+{
+    padding-left: 2.39%;    /* 12px / 503px */
+    font-size: 2em;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+.content-terms h3
+{
+    font-size: 1.5em;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+.whats-recent
+{
+    float: left;
+    width: 63.0555556%;
+    margin-left: 0.416667%;    /* 6px / 1440px */
+    overflow: auto;
+}
+
+.whats-recent h2
+{
+    padding-left: 12px;
+    font-size: 2em;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+.whats-recent .filters
+{
+    padding-left: 12px;
+    margin-top: 12px;
+}
+
+.whats-recent .filters span
+{
+    opacity: 0.8;
+    cursor: pointer;
+    
+    transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.whats-recent .filters span:hover
+{
+    opacity: 1;
+}
+
+.whats-recent .filters span:nth-child(n+2)
+{
+    margin-left: 24px;
+}
+
+.whats-recent .filters span:first-child
+{
+    opacity: 1;
+}
+
+.whats-recent ul li
+{
+    padding: 12px;
+    margin-top: 12px;
+    position: relative;
+    overflow: hidden;
+    
+    transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    -ms-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -webkit-transition: background-color 0.3s ease-out;
+}
+
+
+.whats-recent .activity-portrait
+{
+    float: left;
+    margin-top: 6px;
+    width: 60px;
+}
+
+.whats-recent .activity-portrait img
+{
+    max-width: 100%;
+}
+
+.whats-recent .activity-details
+{
+    margin-left: 72px;
+}
+
+.whats-recent ul li h3
+{
+    font-size: 1.3em;
+    font-weight: normal;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+
+.whats-recent .activity-social
+{
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    
+    min-width: 5em;
+    transition: left 0.3s ease-out;
+}
+
+.whats-recent .activity-social img
+{
+    vertical-align: top;
+    margin-right: 12px;
+    margin-bottom: 6px;
+    opacity: 0.4;
+    
+    cursor: pointer;
+    
+    transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    -ms-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+}
+
+.whats-recent .activity-social img:hover
+{
+    opacity: 1;
+}
+
+.whats-recent .activity-pagination
+{
+    float: right;
+    margin: 12px 0px;
+}
+
+.whats-recent .activity-pagination img
+{
+    margin-right: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    
+    transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.whats-recent .activity-pagination img:hover
+{
+    opacity: 1;
+}

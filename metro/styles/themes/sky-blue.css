@@ -1,0 +1,176 @@
+/* Login Page CSS   */
+.sky-blue .main-logo, .sky-blue .login-page-title
+{
+    background-color: #01BCF3;
+    color: #FFFFFF;
+}
+
+.sky-blue .login-banner-message
+{
+    background-color: #01BCF3;
+    color: #FFFFFF;
+}
+
+.sky-blue a.login-hyperlink
+{
+    background-color: #01BCF3;
+    color: #FFFFFF;
+}
+
+.sky-blue a.login-hyperlink:hover
+{
+    background-color: #AC2700;
+}
+
+.sky-blue a.login-hyperlink:active
+{
+    background-color: #D5D5D5;
+}
+
+.sky-blue input[type="submit"], .sky-blue input[type="button"], .sky-blue button[type="button"]
+{
+    background-color: #01BCF3;
+    color: #FFFFFF;
+}
+
+.sky-blue input[type="submit"]:hover, .sky-blue input[type="button"]:hover, .sky-blue button[type="button"]:hover
+{
+    background-color: #AC2700;
+}
+
+.sky-blue input[type="submit"]:active, .sky-blue input[type="button"]:active, .sky-blue button[type="button"]:active
+{
+    background-color: #D5D5D5;
+}
+
+.sky-blue input[type="text"]:focus, .sky-blue input[type="password"]:focus
+{
+    border-color: #A0A0A0;
+    border-bottom-color: #01BCF3;
+}
+
+/* Login Page CSS */
+.sky-blue .login-controls-panel
+{
+    color: #000000;
+}
+
+/* Home Page CSS */
+.sky-blue .page-top
+{
+    color: #000000;
+}
+
+.sky-blue .user-panel .logged-user-portrait
+{
+    background-color: #01BCF3;
+}
+
+.sky-blue .search-form .search-button
+{
+    background: #01BCF3;
+}
+
+.sky-blue .search-form input[type="text"]:focus
+{
+    border-bottom-color: #01BCF3;
+}
+
+.sky-blue .navigation-menu > li
+{
+    background-color: #01BCF3;
+    color: #FFFFFF;
+}
+
+.sky-blue .navigation-menu > li:hover
+{
+    /*#C0C0C0 or #898989*/
+    background-color: #D2D2D2;
+}
+
+.sky-blue .navigation-menu > li ul > li
+{
+    /*Try #898989 for backgroud*/
+    background-color: #D2D2D2;
+    color: #2A2A2A;
+}
+
+.sky-blue .navigation-menu > li a
+{
+    color: #FFFFFF;
+}
+
+.sky-blue .navigation-menu > li ul li:first-child
+{
+    border-top-color: #01BCF3;
+}
+
+.sky-blue .navigation-menu > li ul li:hover
+{
+    background-color: #01BCF3;
+    color: #FFFFFF;
+}
+
+.sky-blue .slideshow ul.slideshow-content li .slideshow-message-panel
+{
+    background-color: #01BCF3;
+    color: #FFFFFF;
+}
+
+.sky-blue .slideshow ul.slideshow-navigation li
+{
+    background-color: #01BCF3;
+}
+
+.sky-blue .content-terms li:hover, .sky-blue .content-terms li.file-resource:hover
+{
+    background-color: #D2D2D2;
+/*    color: #FFFFFF;*/
+}
+
+
+.sky-blue .whats-recent
+{
+    border: 1px solid #D2D2D2;
+}
+
+.sky-blue .whats-recent .activity-portrait img
+{
+    background-color: #01BCF3;
+}
+
+.sky-blue .whats-recent ul li:hover
+{
+    background-color: #D2D2D2;
+}
+
+.sky-blue .filters span
+{
+    color: #888888;
+}
+
+.sky-blue .filters span:first-child
+{
+    color: #000000;
+}
+
+.sky-blue .filters span:hover
+{
+    color: #000000;
+}
+
+.sky-blue .list-item
+{
+    background-color: #EEEEEE;
+}
+
+.sky-blue .list-item:hover
+{
+    background-color: #D2D2D2;
+}
+
+/* Background images and related resources */
+.sky-blue .content-terms li
+{
+    background-image: url('../../resources/icons/theme-specific/sky-blue-folder.png'); /* Unable to convert this to percent based scale */
+}

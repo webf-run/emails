@@ -1,0 +1,176 @@
+/* Login Page CSS   */
+.light-yellow .main-logo, .light-yellow .login-page-title
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.light-yellow .login-banner-message
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.light-yellow a.login-hyperlink
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.light-yellow a.login-hyperlink:hover
+{
+    background-color: #AC2700;
+}
+
+.light-yellow a.login-hyperlink:active
+{
+    background-color: #D5D5D5;
+}
+
+.light-yellow input[type="submit"], .light-yellow input[type="button"], .light-yellow button[type="button"]
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.light-yellow input[type="submit"]:hover, .light-yellow input[type="button"]:hover, .light-yellow button[type="button"]:hover
+{
+    background-color: #AC2700;
+}
+
+.light-yellow input[type="submit"]:active, .light-yellow input[type="button"]:active, .light-yellow button[type="button"]:active
+{
+    background-color: #D5D5D5;
+}
+
+.light-yellow input[type="text"]:focus, .light-yellow input[type="password"]:focus
+{
+    border-color: #A0A0A0;
+    border-bottom-color: #F89406;
+}
+
+/* Login Page CSS */
+.light-yellow .login-controls-panel
+{
+    color: #000000;
+}
+
+/* Home Page CSS */
+.light-yellow .page-top
+{
+    color: #000000;
+}
+
+.light-yellow .user-panel .logged-user-portrait
+{
+    background-color: #F89406;
+}
+
+.light-yellow .search-form .search-button
+{
+    background: #F89406;
+}
+
+.light-yellow .search-form input[type="text"]:focus
+{
+    border-bottom-color: #F89406;
+}
+
+.light-yellow .navigation-menu > li
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.light-yellow .navigation-menu > li:hover
+{
+    /*#C0C0C0 or #898989*/
+    background-color: #D2D2D2;
+}
+
+.light-yellow .navigation-menu > li ul > li
+{
+    /*Try #898989 for backgroud*/
+    background-color: #D2D2D2;
+    color: #2A2A2A;
+}
+
+.light-yellow .navigation-menu > li a
+{
+    color: #FFFFFF;
+}
+
+.light-yellow .navigation-menu > li ul li:first-child
+{
+    border-top-color: #F89406;
+}
+
+.light-yellow .navigation-menu > li ul li:hover
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.light-yellow .slideshow ul.slideshow-content li .slideshow-message-panel
+{
+    background-color: #F89406;
+    color: #FFFFFF;
+}
+
+.light-yellow .slideshow ul.slideshow-navigation li
+{
+    background-color: #F89406;
+}
+
+.light-yellow .content-terms li:hover, .light-yellow .content-terms li.file-resource:hover
+{
+    background-color: #D2D2D2;
+/*    color: #FFFFFF;*/
+}
+
+
+.light-yellow .whats-recent
+{
+    border: 1px solid #D2D2D2;
+}
+
+.light-yellow .whats-recent .activity-portrait img
+{
+    background-color: #F89406;
+}
+
+.light-yellow .whats-recent ul li:hover
+{
+    background-color: #D2D2D2;
+}
+
+.light-yellow .filters span
+{
+    color: #888888;
+}
+
+.light-yellow .filters span:first-child
+{
+    color: #000000;
+}
+
+.light-yellow .filters span:hover
+{
+    color: #000000;
+}
+
+.light-yellow .list-item
+{
+    background-color: #EEEEEE;
+}
+
+.light-yellow .list-item:hover
+{
+    background-color: #D2D2D2;
+}
+
+/* Background images and related resources */
+.light-yellow .content-terms li
+{
+    background-image: url('../../resources/icons/theme-specific/light-yellow-folder.png'); /* Unable to convert this to percent based scale */
+}

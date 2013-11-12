@@ -1,0 +1,178 @@
+/* Login Page CSS   */
+.green-mojito .main-logo, .green-mojito .login-page-title
+{
+    background-color: #80C408;
+    color: #FFFFFF;
+}
+
+.green-mojito .login-banner-message
+{
+    background-color: #80C408;
+    color: #FFFFFF;
+}
+
+.green-mojito a.login-hyperlink
+{
+    background-color: #80C408;
+    color: #FFFFFF;
+}
+
+.green-mojito a.login-hyperlink:hover
+{
+    background-color: #AC2700;
+}
+
+.green-mojito a.login-hyperlink:active
+{
+    background-color: #D5D5D5;
+}
+
+.green-mojito input[type="submit"], .green-mojito input[type="button"], .green-mojito button[type="button"]
+{
+    background-color: #80C408;
+    color: #FFFFFF;
+}
+
+.green-mojito input[type="submit"]:hover, .green-mojito input[type="button"]:hover, .green-mojito button[type="button"]:hover
+{
+    background-color: #AC2700;
+}
+
+.green-mojito input[type="submit"]:active, .green-mojito input[type="button"]:active, .green-mojito button[type="button"]:active
+{
+    background-color: #D5D5D5;
+}
+
+.green-mojito input[type="text"]:focus, .green-mojito input[type="password"]:focus
+{
+    border-color: #A0A0A0;
+    border-bottom-color: #80C408;
+}
+
+/* Login Page CSS */
+.green-mojito .login-controls-panel
+{
+    color: #000000;
+}
+
+
+/* Home Page CSS */
+.green-mojito .page-top
+{
+    color: #000000;
+}
+
+.green-mojito .user-panel .logged-user-portrait
+{
+    background-color: #80C408;
+}
+
+.green-mojito .search-form .search-button
+{
+    background: #80C408;
+}
+
+.green-mojito .search-form input[type="text"]:focus
+{
+    border-bottom-color: #80C408;
+}
+
+.green-mojito .navigation-menu > li
+{
+    background-color: #80C408;
+    color: #FFFFFF;
+}
+
+.green-mojito .navigation-menu > li:hover
+{
+    /*#C0C0C0 or #898989*/
+    background-color: #D2D2D2;
+}
+
+.green-mojito .navigation-menu > li ul > li
+{
+    /*Try #898989 for backgroud*/
+    background-color: #D2D2D2;
+    color: #2A2A2A;
+}
+
+.green-mojito .navigation-menu > li a
+{
+    color: #FFFFFF;
+}
+
+.green-mojito .navigation-menu > li ul li:first-child
+{
+    border-top-color: #80C408;
+}
+
+.green-mojito .navigation-menu > li ul li:hover
+{
+    background-color: #80C408;
+    color: #FFFFFF;
+}
+
+.green-mojito .slideshow ul.slideshow-content li .slideshow-message-panel
+{
+    background-color: #80C408;
+    color: #FFFFFF;
+}
+
+.green-mojito .slideshow ul.slideshow-navigation li
+{
+    background-color: #80C408;
+}
+
+.green-mojito .content-terms li:hover, .green-mojito .content-terms li.file-resource:hover
+{
+    background-color: #D2D2D2;
+/*    color: #FFFFFF;*/
+}
+
+
+.green-mojito .whats-recent
+{
+    border: 1px solid #D2D2D2;
+}
+
+.green-mojito .whats-recent .activity-portrait img
+{
+    background-color: #80C408;
+}
+
+.green-mojito .whats-recent ul li:hover
+{
+    background-color: #D2D2D2;
+}
+
+.green-mojito .filters span
+{
+    color: #888888;
+}
+
+.green-mojito .filters span:first-child
+{
+    color: #000000;
+}
+
+.green-mojito .filters span:hover
+{
+    color: #000000;
+}
+
+.green-mojito .list-item
+{
+    background-color: #EEEEEE;
+}
+
+.green-mojito .list-item:hover
+{
+    background-color: #D2D2D2;
+}
+
+
+/* Background images and related resources */
+.green-mojito .content-terms li
+{
+    background-image: url('../../resources/icons/theme-specific/green-mojito-folder.png'); /* Unable to convert this to percent based scale */
+}

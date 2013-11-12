@@ -1,0 +1,207 @@
+.page-container
+{
+    min-width: 960px;
+}
+
+.page-content
+{
+    margin-bottom: 24px;
+}
+
+.content-terms
+{
+    float: left;
+    width: 30%;
+    margin-left: 0.416667%;    /* 6px / 1440px */
+
+    /* Either border or background */
+    /*background-color: #EEEEEE;*/
+    border: 1px solid #D2D2D2;
+}
+
+.content-terms li
+{
+    margin-top: 2.39%;        /* 12px / 503px */
+    padding: 12px;              /* This is complecated scenario. Needs some rework to design this thing. */
+    padding-left: 84px;
+    background: transparent 6px 16px no-repeat none;
+
+    transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    -ms-transition: background-color 0.3s ease-out;
+    -mos-transition: background-color 0.3s ease-out;
+    -webkit-transition: background-color 0.3s ease-out;
+
+    cursor: pointer;
+}
+
+.content-terms li.file-resource
+{
+    background: transparent 14px 16px no-repeat url('../resources/icons/adobe-pdf.png');
+}
+
+.content-terms h2
+{
+    padding-left: 2.39%;    /* 12px / 503px */
+    font-size: 2em;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+.content-terms h3
+{
+    font-size: 1.5em;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+
+.content-documents
+{
+    border: 1px solid #D2D2D2;
+    float: right;
+    width: 68.055556%;
+    margin-right: 0.416667%;    /* 6px / 1440px */
+}
+
+.content-documents h2
+{
+    margin-left: 1.22449%;    /* 12px / 980px */
+    font-size: 2em;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+.content-documents .filters
+{
+    margin-top: 12px;
+    margin-left: 1.22449%;     /* 12px / 980px */
+}
+
+.filters span
+{
+    color: #888888;
+    opacity: 0.8;
+    cursor: pointer;
+
+    transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.content-documents .filters span:hover
+{
+    opacity: 1;
+}
+
+.content-documents .filters span:nth-child(n+2)
+{
+    margin-left: 24px;
+}
+
+.content-documents .filters span:first-child
+{
+    opacity: 1;
+}
+
+.list-collection
+{
+    overflow: auto;
+    margin-right: 1.239669%;       /* 12px / 968px */
+}
+
+.list-item
+{
+    float: left;
+    position: relative;
+    width: 29.3%;
+    margin-left: 1.2399%;      /* 12px / 968px */
+    margin-top: 1.2399%;      /* 12px / 968px */
+    padding: 1.2399%;
+    overflow: hidden;
+    border: 1px solid #D8D8D8;
+
+    transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
+    -ms-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -webkit-transition: background-color 0.3s ease-out;
+}
+
+.list-item .list-item-portrait
+{
+    width: 20.905923%;  /* 60px / 287px */
+    float: left;
+    padding-top: 4px;
+}
+
+.list-item .list-item-portrait img
+{
+    max-width: 100%;
+}
+
+.list-item .list-item-details
+{
+    margin-left: 25.087108%;        /* 72px / 287px */
+    position: relative;
+}
+
+.list-item .list-item-details:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.list-item h3
+{
+    font-family: "Segoe UI Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    font-size: 1.3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.list-item .download-info
+{
+    float: right;
+    margin-top: 6px;
+}
+
+.list-item .download-info img
+{
+    max-width: 36px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.list-item .download-info img:hover
+{
+    opacity: 1;
+}
+
+.content-documents .content-pagination
+{
+    float: right;
+    margin: 12px 0;
+}
+
+.content-documents .content-pagination img
+{
+    margin-right: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    
+    transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.content-documents .content-pagination img:hover
+{
+    opacity: 1;
+}

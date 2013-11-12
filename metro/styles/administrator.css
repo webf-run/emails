@@ -1,0 +1,184 @@
+.page-container
+{
+    min-width: 960px;
+}
+
+.page-content
+{
+    margin-bottom: 24px;
+}
+
+.company-panel
+{
+    border: 1px solid #D2D2D2;
+    margin: 0 0.416667%;    /* 6px / 1440px */
+    overflow: auto;
+    position: relative;
+}
+
+.company-panel .company-settings
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 0.84152%;  /* 12px / 1426px */
+}
+
+.company-panel .company-settings img
+{
+    margin-right: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    
+    transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.company-panel .company-settings img:hover
+{
+    opacity: 1;
+}
+
+.company-panel h2
+{
+    margin-left: 0.84152%;  /* 12px / 1426px */
+    font-size: 2em;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+.company-panel .filters
+{
+    margin-top: 12px;
+    margin-left: 0.84152%;  /* 12px / 1426px */
+}
+
+.company-panel .filters span
+{
+    opacity: 0.8;
+    cursor: pointer;
+
+    transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.company-panel .filters span:hover
+{
+    opacity: 1;
+}
+
+.company-panel .filters span:nth-child(n+2)
+{
+    margin-left: 24px;
+}
+
+.company-panel .filters span:first-child
+{
+    opacity: 1;
+}
+
+.list-collection
+{
+    overflow: auto;
+    margin-right: 0.84152%;       /* 12px / 1426px */
+}
+
+.list-item
+{
+    float: left;
+    position: relative;
+    width: 22.206506%;          /* 315px / 1414px */
+    margin-left: 0.852273%;     /* 12px / 1408px */
+    margin-top: 0.852273%;      /* 12px / 1408px */
+    padding: 0.852273%;
+    overflow: hidden;
+    border: 1px solid #D8D8D8;
+
+    transition: background-color 0.3s ease-out;
+}
+
+.list-item .list-item-portrait
+{
+    width: 20.905923%;  /* 60px / 287px */
+    float: left;
+    padding-top: 4px;
+}
+
+.list-item .list-item-portrait img
+{
+    max-width: 100%;
+}
+
+.list-item .list-item-details
+{
+    margin-left: 25.087108%;        /* 72px / 287px */
+    position: relative;
+}
+
+.list-item .list-item-details:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.list-item h3
+{
+    font-family: "Segoe UI Light","Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+    font-size: 1.3em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.list-item .subscription-info
+{
+    float: right;
+    margin-top: 6px;
+    min-height: 36px;
+}
+
+.list-item .subscription-info img
+{
+    max-width: 36px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+.list-item .subscription-info img:hover
+{
+    opacity: 1;
+}
+
+.company-panel .content-pagination
+{
+    float: right;
+    margin: 12px 0;
+}
+
+.company-panel .content-pagination img
+{
+    margin-right: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    
+    transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+}
+
+.company-panel .content-pagination img:hover
+{
+    opacity: 1;
+}
+

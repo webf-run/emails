@@ -1,0 +1,178 @@
+/* Login Page CSS   */
+.husky-green .main-logo, .husky-green .login-page-title
+{
+    background-color: #004D60;
+    color: #FFFFFF;
+}
+
+.husky-green .login-banner-message
+{
+    background-color: #004D60;
+    color: #FFFFFF;
+}
+
+.husky-green a.login-hyperlink
+{
+    background-color: #004D60;
+    color: #FFFFFF;
+}
+
+.husky-green a.login-hyperlink:hover
+{
+    background-color: #AC2700;
+}
+
+.husky-green a.login-hyperlink:active
+{
+    background-color: #D5D5D5;
+}
+
+.husky-green input[type="submit"], .husky-green input[type="button"], .husky-green button[type="button"]
+{
+    background-color: #004D60;
+    color: #FFFFFF;
+}
+
+.husky-green input[type="submit"]:hover, .husky-green input[type="button"]:hover, .husky-green button[type="button"]:hover
+{
+    background-color: #AC2700;
+}
+
+.husky-green input[type="submit"]:active, .husky-green input[type="button"]:active, .husky-green button[type="button"]:active
+{
+    background-color: #D5D5D5;
+}
+
+.husky-green input[type="text"]:focus, .husky-green input[type="password"]:focus
+{
+    border-color: #A0A0A0;
+    border-bottom-color: #004D60;
+}
+
+/* Login Page CSS */
+.husky-green .login-controls-panel
+{
+    color: #000000;
+}
+
+
+/* Home Page CSS */
+.husky-green .page-top
+{
+    color: #000000;
+}
+
+.husky-green .user-panel .logged-user-portrait
+{
+    background-color: #004D60;
+}
+
+.husky-green .search-form .search-button
+{
+    background: #004D60;
+}
+
+.husky-green .search-form input[type="text"]:focus
+{
+    border-bottom-color: #004D60;
+}
+
+.husky-green .navigation-menu > li
+{
+    background-color: #004D60;
+    color: #FFFFFF;
+}
+
+.husky-green .navigation-menu > li:hover
+{
+    /*#C0C0C0 or #898989*/
+    background-color: #D2D2D2;
+}
+
+.husky-green .navigation-menu > li ul > li
+{
+    /*Try #898989 for backgroud*/
+    background-color: #D2D2D2;
+    color: #2A2A2A;
+}
+
+.husky-green .navigation-menu > li a
+{
+    color: #FFFFFF;
+}
+
+.husky-green .navigation-menu > li ul li:first-child
+{
+    border-top-color: #004D60;
+}
+
+.husky-green .navigation-menu > li ul li:hover
+{
+    background-color: #004D60;
+    color: #FFFFFF;
+}
+
+.husky-green .slideshow ul.slideshow-content li .slideshow-message-panel
+{
+    background-color: #004D60;
+    color: #FFFFFF;
+}
+
+.husky-green .slideshow ul.slideshow-navigation li
+{
+    background-color: #004D60;
+}
+
+.husky-green .content-terms li:hover, .husky-green .content-terms li.file-resource:hover
+{
+    background-color: #D2D2D2;
+/*    color: #FFFFFF;*/
+}
+
+
+.husky-green .whats-recent
+{
+    border: 1px solid #D2D2D2;
+}
+
+.husky-green .whats-recent .activity-portrait img
+{
+    background-color: #004D60;
+}
+
+.husky-green .whats-recent ul li:hover
+{
+    background-color: #D2D2D2;
+}
+
+.husky-green .filters span
+{
+    color: #888888;
+}
+
+.husky-green .filters span:first-child
+{
+    color: #000000;
+}
+
+.husky-green .filters span:hover
+{
+    color: #000000;
+}
+
+.husky-green .list-item
+{
+    background-color: #EEEEEE;
+}
+
+.husky-green .list-item:hover
+{
+    background-color: #D2D2D2;
+}
+
+
+/* Background images and related resources */
+.husky-green .content-terms li
+{
+    background-image: url('../../resources/icons/theme-specific/husky-green-folder.png'); /* Unable to convert this to percent based scale */
+}

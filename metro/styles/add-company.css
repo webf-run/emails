@@ -1,0 +1,108 @@
+.page-container
+{
+    min-width: 960px;
+}
+
+.page-content
+{
+    margin-bottom: 24px;
+}
+
+.new-company
+{
+    border: 1px solid #D2D2D2;
+    margin: 0 0.416667%;    /* 6px / 1440px */
+    overflow: auto;
+    position: relative;
+}
+
+.new-company h2
+{
+    font-size: 2em;
+    font-family: "Segoe UI Light", "Segoe UI","Segoe","Segoe WP","Tahoma","Verdana","Arial","sans-serif";
+}
+
+.new-company h2 span
+{
+    font-size: 1.5em;
+}
+
+.new-company li
+{
+    margin: 0 12px;
+    overflow: auto;
+    display: none;
+}
+
+.new-company li.default
+{
+    display: block;
+}
+
+.new-company label
+{
+    display: block;
+    font-size: 0.75em;
+    margin-bottom: 0.848656%;
+}
+
+.new-company form
+{
+    overflow: hidden;
+}
+
+input[type="text"], select
+{
+    border: 1px solid #BABABA;
+    font-size: 0.9em;
+    margin-bottom: 2.5678%;    /* 18px / 707px */
+    padding: 0.858%;           /* 6px / 707px */
+}
+
+.new-company input[type="text"], .new-company select
+{
+    width: 60%;
+    max-width: 312px;
+    min-width: 288px;
+}
+
+select
+{
+    padding: 0.8%;
+}
+
+input[type="text"]:focus
+{
+    border-bottom-width: 2px;
+    padding-bottom: 0.707213%;
+}
+
+.new-company .left-panel
+{
+    float: left;
+    width: 50%;
+    margin: 0;
+}
+
+.new-company .right-panel
+{
+    width: 50%;
+    float: right;
+    margin: 0;
+}
+
+.new-company .form-pagination
+{
+    margin: 12px 0;
+    float: right;
+}
+
+.new-company .form-pagination img
+{
+    cursor: pointer;
+}
+
+.new-company .form-pagination img.back
+{
+    margin-right: 12px;
+}

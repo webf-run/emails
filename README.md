@@ -3,7 +3,7 @@ design-inspiration
 
 Collection of modern web designs
 
-This is what happens when deverloper tries to learn visual design. Between wireframes and actual code, there lies a vast region of amazing creative ideas that complements great enganing user experience.
+This is what happens when developer tries to learn visual design. Between wireframes and actual code, there lies a vast region of amazing creative ideas that complements great enganing user experience.
 
 <strong>In short it is my application of CRAP - Constrast, Repeatation, Alignment and Proximity applied to web design.</strong>
 

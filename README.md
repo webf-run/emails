@@ -9,4 +9,4 @@ This is what happens when developer tries to learn visual design. Between wirefr
 
 Please note the code written is strictly for visual concept representation. It is not perfectly engineered code. Free to reuse the concept but write your own code.
 
-[http://harshalrp.github.io/design-inspiration](http://harshalrp.github.io/design-inspiration)
+[http://mistyharsh.github.io/design-inspiration](http://mistyharsh.github.io/design-inspiration)

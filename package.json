@@ -1,0 +1,17 @@
+{
+  "name": "@webf/emails",
+  "version": "0.1.0",
+  "description": "The MJML email design system",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@types/mjml": "^4.7.4",
+    "mjml": "^4.15.3"
+  }
+}

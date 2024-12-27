@@ -1,2 +1,1 @@
-
-export function render() {}
+export { render } from './render.js';

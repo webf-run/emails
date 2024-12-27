@@ -1,12 +1,21 @@
-design-inspiration
-==================
+# The `@webf/emails`
 
-Collection of modern web designs
+The JSX-based component library and design system for MJML email templates.
 
-This is what happens when developer tries to learn visual design. Between wireframes and actual code, there lies a vast region of amazing creative ideas that complements great enganing user experience.
 
-<strong>In short it is my application of CRAP - Constrast, Repeatation, Alignment and Proximity applied to web design.</strong>
+## Installation
 
-Please note the code written is strictly for visual concept representation. It is not perfectly engineered code. Free to reuse the concept but write your own code.
+```bash
+npm install --save @webf/emails
+```
 
-[http://mistyharsh.github.io/design-inspiration](http://mistyharsh.github.io/design-inspiration)
+For TypeScript support, the library supports the automatic JSX runtime. To configure it, use following JSX options in your tsconfig file:
+
+``` jsonc
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "@webf/emails"
+  },
+}
+```

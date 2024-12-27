@@ -1,0 +1,11 @@
+{
+  "extends": "../config/tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../dist/emails",
+    "noEmit": false,
+
+    "jsx": "react-jsx",
+    "jsxImportSource": "@webf/emails"
+  },
+  "include": ["**/*"],
+}

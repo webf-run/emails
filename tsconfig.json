@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "verbatimModuleSyntax": true
+  },
+  "references": [
+    { "path": "./emails/tsconfig.json" },
+  ],
+  "include": [],
+  "files": []
+}

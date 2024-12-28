@@ -9,10 +9,16 @@
     "./jsx-runtime": {
       "types": "./dist/emails/runtime.d.ts",
       "import": "./dist/emails/runtime.js"
+    },
+    "./jsx-dev-runtime": {
+      "types": "./dist/emails/runtime.d.ts",
+      "import": "./dist/emails/runtime.js"
     }
   },
   "scripts": {
-    "build:lib": "tsc -b tsconfig.json"
+    "build:lib": "tsc -b tsconfig.json",
+    "dev:format": "prettier --write .",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -29,7 +35,8 @@
     "@types/node": "^22.7.5",
     "prettier": "^3.4.2",
     "tsx": "^4.19.1",
-    "typescript": "^5.7.2"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   },
   "volta": {
     "node": "22.12.0"

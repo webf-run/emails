@@ -1,4 +1,4 @@
-export type Component<P> = (props: P) => VNode<P>;
+export type Component<P> = (props: P) => EmailNode;
 export type ComponentType<P> = string | Component<P>;
 
 export type VNode<P> = {
@@ -6,9 +6,10 @@ export type VNode<P> = {
   props: P;
 };
 
-export type ChildNode =
+export type EmailNode =
   | null
   | undefined
+  | string
   | JSX.Element
   | JSX.Element[];
 

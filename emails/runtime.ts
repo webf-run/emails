@@ -8,5 +8,6 @@ export function jsx<P>(type: ComponentType<P>, props: P): VNode<P> {
 }
 
 export const jsxs = jsx;
+export const jsxDEV = jsx;
 
 export type { JSX, VNode };

@@ -7,5 +7,5 @@
     "jsx": "react-jsx",
     "jsxImportSource": "@webf/emails"
   },
-  "include": ["**/*"],
+  "include": ["**/*"]
 }

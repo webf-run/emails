@@ -1,4 +1,4 @@
-import type { VNode, JSX, ComponentType } from './jsx.js';
+import type { ComponentType, JSX, VNode } from './jsx.js';
 
 export function jsx<P>(type: ComponentType<P>, props: P): VNode<P> {
   return {

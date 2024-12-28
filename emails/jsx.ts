@@ -6,12 +6,7 @@ export type VNode<P> = {
   props: P;
 };
 
-export type EmailNode =
-  | null
-  | undefined
-  | string
-  | JSX.Element
-  | JSX.Element[];
+export type EmailNode = null | undefined | string | JSX.Element | JSX.Element[];
 
 export namespace JSX {
   export interface Element extends VNode<any> {}
@@ -44,13 +39,17 @@ export namespace JSX {
     spacer: MJMLSpacerAttributes;
     text: MJMLTextAttributes;
 
-
     /// Wrapper element
     /** Wrapper enables to wrap multiple sections together.
      *  It's especially useful to achieve nested layouts with
      *  shared border or background images across sections.
      * */
     wrapper: MJMLWrapperAttributes;
+
+    // HTML Tags
+    a: MJMLCommonAttributes;
+    span: MJMLCommonAttributes;
+    hr: any;
   }
 
   // Common Attributes

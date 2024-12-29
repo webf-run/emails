@@ -1,3 +1,5 @@
+import type { MJMLButtonAttributes } from './type.js';
+
 export type Component<P> = (props: P) => EmailNode;
 export type ComponentType<P> = string | Component<P>;
 
@@ -137,15 +139,15 @@ export namespace JSX {
     border?: string;
   }
 
-  export interface MJMLButtonAttributes extends MJMLCommonAttributes {
-    align?: 'left' | 'center' | 'right';
-    backgroundColor?: string;
-    color?: string;
-    fontSize?: string | number;
-    fontWeight?: string | number;
-    href: string;
-    borderRadius?: string | number;
-  }
+  // export interface MJMLButtonAttributes extends MJMLCommonAttributes {
+  //   align?: 'left' | 'center' | 'right';
+  //   backgroundColor?: string;
+  //   color?: string;
+  //   fontSize?: string | number;
+  //   fontWeight?: string | number;
+  //   href: string;
+  //   borderRadius?: string | number;
+  // }
 
   export interface MJMLSpacerAttributes extends MJMLCommonAttributes {
     height: string | number;

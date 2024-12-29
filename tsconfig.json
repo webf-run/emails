@@ -5,7 +5,10 @@
     "moduleResolution": "NodeNext",
     "verbatimModuleSyntax": true
   },
-  "references": [{ "path": "./emails/tsconfig.json" }],
+  "references": [
+    { "path": "./emails/tsconfig.json" },
+    { "path": "./docs/tsconfig.json" }
+  ],
   "include": [],
   "files": []
 }

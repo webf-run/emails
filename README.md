@@ -18,3 +18,24 @@ For TypeScript support, the library supports the automatic JSX runtime. To confi
   },
 }
 ```
+
+## Contriubtion - Local setup
+
+Use the following script to run local development setup:
+
+```bash
+# Install dependencies
+npm install
+
+# Run the library in dev mode with documenation siste
+npm run dev
+
+# Build library for publishing
+npm run build:lib
+
+# Build documentation website
+npm run build:site
+
+# Automated tests
+npm run test
+```

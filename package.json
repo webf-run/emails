@@ -4,6 +4,10 @@
   "version": "0.1.0",
   "description": "The MJML email design system",
   "main": "index.js",
+  "imports": {
+    "#self/jsx-runtime": "./emails/runtime.ts",
+    "#self/jsx-dev-runtime": "./emails/runtime.ts"
+  },
   "exports": {
     ".": "./dist/emails/index.js",
     "./jsx-runtime": {
@@ -16,8 +20,12 @@
     }
   },
   "scripts": {
-    "build:lib": "tsc -b tsconfig.json",
+    "check:types": "tsc -b tsconfig.json --noEmit",
+    "build:lib": "tsc -p tsconfig.build.json",
+    "build:site": "rspress build -c docs/rspress.config.ts",
+    "dev": "rspress dev -c docs/rspress.config.ts",
     "dev:format": "prettier --write .",
+    "preview": "rspress preview -c docs/rspress.config.ts",
     "test": "vitest"
   },
   "keywords": [],
@@ -26,14 +34,17 @@
   "dependencies": {
     "@types/mjml": "^4.7.4",
     "decamelize-keys": "^2.0.1",
-    "mjml": "^4.15.3",
-    "preact": "^10.25.3"
+    "mjml": "^4.15.3"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/mjml-core": "^4.15.1",
     "@types/node": "^22.7.5",
+    "mjml-browser": "^4.15.3",
     "prettier": "^3.4.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rspress": "^1.39.3",
     "tsx": "^4.19.1",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"

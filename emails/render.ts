@@ -1,6 +1,6 @@
 import decamelizeKeys from 'decamelize-keys';
 import mjml2html from 'mjml';
-import type { MJMLJsonObject, MJMLJsonWithContent } from 'mjml-core';
+import type { MJMLJsonObject } from 'mjml-core';
 
 import type { ComponentType, EmailNode, JSX } from './jsx.js';
 
@@ -12,6 +12,7 @@ export function render(elm: JSX.Element): string {
   if (mjmlTree.length === 1 && root) {
     const result = mjml2html(root, {
       validationLevel: 'strict',
+      minify: false,
     });
 
     if (result.errors.length > 0) {

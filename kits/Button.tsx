@@ -19,8 +19,10 @@ export type ButtonProps = {
     innerPadding?: string;
     letterSpacing?: string;
     lineHeight?: string;
+    padding?: string;
   };
 
+  onClick?: () => void;
   children?: EmailNode;
   href?: string;
 };

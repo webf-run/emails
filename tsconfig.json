@@ -8,7 +8,7 @@
   "references": [
     { "path": "./emails/tsconfig.json" },
     { "path": "./kits/tsconfig.json" },
-    { "path": "./docs/tsconfig.json" },
+    { "path": "./docs/tsconfig.json" }
   ],
   "include": [],
   "files": []

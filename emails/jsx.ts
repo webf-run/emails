@@ -76,13 +76,6 @@ export namespace JSX {
     paddingRight?: string | number;
   }
 
-  // export interface MJMLAccordionAttributes extends MJMLCommonAttributes {
-  //   border?: string;
-  //   fontSize?: string | number;
-  //   iconAlign?: 'left' | 'right';
-  //   iconWidth?: string | number;
-  // }
-
   // Structural Attributes
   export interface MJMLBodyAttributes extends MJMLCommonAttributes {
     width: string;
@@ -116,74 +109,6 @@ export namespace JSX {
     width: string;
   }
 
-  // Body Attributes
-  // export interface MJMLSectionAttributes extends MJMLCommonAttributes {
-  //   backgroundColor?: string;
-  //   backgroundRepeat?: string;
-  //   backgroundSize?: string;
-  //   border?: string;
-  //   direction?: 'ltr' | 'rtl';
-  //   fullWidth?: boolean;
-  //   textAlign?: 'left' | 'center' | 'right';
-  // }
-
-  // export interface MJMLColumnAttributes extends MJMLCommonAttributes {
-  //   width?: string;
-  //   verticalAlign?: 'top' | 'middle' | 'bottom';
-  //   backgroundColor?: string;
-  // }
-
-  // export interface MJMLTextAttributes extends MJMLCommonAttributes {
-  //   align?: 'left' | 'center' | 'right';
-  //   color?: string;
-  //   fontStyle?: 'normal' | 'italic';
-  //   fontSize?: string | number;
-  //   fontWeight?: string | number;
-  //   lineHeight?: string | number;
-  // }
-
-  // export interface MJMLImageAttributes extends MJMLCommonAttributes {
-  //   src: string;
-  //   alt?: string;
-  //   width?: string | number;
-  //   height?: string | number;
-  //   href?: string;
-  //   border?: string;
-  // }
-
-  // export interface MJMLButtonAttributes extends MJMLCommonAttributes {
-  //   align?: 'left' | 'center' | 'right';
-  //   backgroundColor?: string;
-  //   color?: string;
-  //   fontSize?: string | number;
-  //   fontWeight?: string | number;
-  //   href: string;
-  //   borderRadius?: string | number;
-  // }
-
-  // export interface MJMLSpacerAttributes extends MJMLCommonAttributes {
-  //   height: string | number;
-  // }
-
-  // export interface MJMLDividerAttributes extends MJMLCommonAttributes {
-  //   borderColor?: string;
-  //   borderWidth?: string | number;
-  // }
-
-  // export interface MJMLSocialAttributes extends MJMLCommonAttributes {
-  //   align?: 'left' | 'center' | 'right';
-  //   fontSize?: string | number;
-  //   iconSize?: string | number;
-  //   mode?: 'horizontal' | 'vertical';
-  // }
-
-  // export interface MJMLCarouselAttributes extends MJMLCommonAttributes {
-  //   align?: 'left' | 'center' | 'right';
-  //   backgroundColor?: string;
-  //   borderRadius?: string | number;
-  //   thumbnails?: 'visible' | 'hidden';
-  // }
-
   export interface MJMLHeroAttributes extends MJMLCommonAttributes {
     backgroundColor?: string;
     backgroundHeight?: string | number;
@@ -193,8 +118,4 @@ export namespace JSX {
 
   export interface MJMLRawAttributes {}
 
-  // Wrapper Attributes
-  // export interface MJMLWrapperAttributes extends MJMLCommonAttributes {
-  //   backgroundColor?: string;
-  // }
 }

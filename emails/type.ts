@@ -1,10 +1,21 @@
-export interface MJMLButtonAttributes {
-  /** Horizontal alignment. Default value is 'center' */
-  align?: string;
+export interface MJMLPaddingAttributes {
+  /** Supports up to 4 parameters. Default value is '10px 25px' */
+  padding?: string;
 
-  /** Button background color. Default value is '#414141' */
-  backgroundColor?: string;
+  /** Bottom offset. Default value is 'n/a' */
+  paddingBottom?: string;
 
+  /** Left offset. Default value is 'n/a' */
+  paddingLeft?: string;
+
+  /** Right offset. Default value is 'n/a' */
+  paddingRight?: string;
+
+  /** Top offset. Default value is 'n/a' */
+  paddingTop?: string;
+}
+
+export interface MJMLBorderAttributes {
   /** CSS border format. Default value is 'none' */
   border?: string;
 
@@ -22,12 +33,25 @@ export interface MJMLButtonAttributes {
 
   /** CSS border format. Default value is 'n/a' */
   borderTop?: string;
+}
 
-  /** Text color. Default value is '#ffffff' */
-  color?: string;
+export interface MJMLBackgroundAttributes {
+  /** Button background color. Default value is '#414141' */
+  backgroundColor?: string;
 
   /** Button container background color. Default value is 'n/a' */
   containerBackgroundColor?: string;
+}
+
+export interface MJMLButtonAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBorderAttributes,
+    MJMLBackgroundAttributes {
+  /** Horizontal alignment. Default value is 'center' */
+  align?: string;
+
+  /** Text color. Default value is '#ffffff' */
+  color?: string;
 
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
@@ -59,21 +83,6 @@ export interface MJMLButtonAttributes {
   /** Line-height on link. Default value is '120%' */
   lineHeight?: string;
 
-  /** Supports up to 4 parameters. Default value is '10px 25px' */
-  padding?: string;
-
-  /** Bottom offset. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Left offset. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Right offset. Default value is 'n/a' */
-  paddingRight?: string;
-
-  /** Top offset. Default value is 'n/a' */
-  paddingTop?: string;
-
   /** Specify the rel attribute for the button link. Default value is 'n/a' */
   rel?: string;
 
@@ -99,10 +108,10 @@ export interface MJMLButtonAttributes {
   width?: string;
 }
 
-export interface MJMLAccordionAttributes {
-  /** CSS border format. Default value is '2px solid black' */
-  border?: string;
-
+export interface MJMLAccordionAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBorderAttributes,
+    MJMLBackgroundAttributes {
   /** Background-color of the cell. Default value is 'n/a' */
   containerBackgroundColor?: string;
 
@@ -135,24 +144,11 @@ export interface MJMLAccordionAttributes {
 
   /** Icon when accordion is wrapped. Default value is 'https?://i.imgur.com/bIXv1bk.png' */
   iconWrappedUrl?: string;
-
-  /** Padding. Default value is '10px 25px' */
-  padding?: string;
-
-  /** Padding bottom. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Padding left. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Padding right. Default value is 'n/a' */
-  paddingRight?: string;
-
-  /** Padding top. Default value is 'n/a' */
-  paddingTop?: string;
 }
 
-export interface MJMLCarouselAttributes {
+export interface MJMLCarouselAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBackgroundAttributes {
   /** Horizontal alignment. Default value is 'center' */
   align?: string;
 
@@ -193,27 +189,15 @@ export interface MJMLCarouselAttributes {
   thumbnails?: string;
 }
 
-export interface MJMLColumnAttributes {
+export interface MJMLColumnAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBorderAttributes,
+    MJMLBackgroundAttributes {
   /** Background color for a column. Default value is 'n/a' */
   backgroundColor?: string;
 
   /** Requires a padding, inner background color for column. Default value is 'n/a' */
   innerBackgroundColor?: string;
-
-  /** CSS border format. Default value is 'none' */
-  border?: string;
-
-  /** CSS border format. Default value is 'n/a' */
-  borderBottom?: string;
-
-  /** CSS border format. Default value is 'n/a' */
-  borderLeft?: string;
-
-  /** CSS border format. Default value is 'n/a' */
-  borderRight?: string;
-
-  /** CSS border format. Default value is 'n/a' */
-  borderTop?: string;
 
   /** Border radius. Default value is 'n/a' */
   borderRadius?: string;
@@ -242,26 +226,13 @@ export interface MJMLColumnAttributes {
   /** Middle/top/bottom (note?: middle works only when adjacent mj-column is also set to middle). Default value is 'top' */
   verticalAlign?: string;
 
-  /** Supports up to 4 parameters. Default value is 'n/a' */
-  padding?: string;
-
-  /** Section top offset. Default value is 'n/a' */
-  paddingTop?: string;
-
-  /** Section bottom offset. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Section left offset. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Section right offset. Default value is 'n/a' */
-  paddingRight?: string;
-
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
 }
 
-export interface MJMLDividerAttributes {
+export interface MJMLDividerAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBackgroundAttributes {
   /** Left/right/center alignment. Default value is 'center' */
   align?: string;
 
@@ -280,26 +251,13 @@ export interface MJMLDividerAttributes {
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
 
-  /** Supports up to 4 parameters. Default value is '10px 25px' */
-  padding?: string;
-
-  /** Bottom offset. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Left offset. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Right offset. Default value is 'n/a' */
-  paddingRight?: string;
-
-  /** Top offset. Default value is 'n/a' */
-  paddingTop?: string;
-
   /** Divider width. Default value is '100%' */
   width?: string;
 }
 
-export interface MJMLHeroAttributes {
+export interface MJMLHeroAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBackgroundAttributes {
   /** Hero background color. Default value is '#ffffff' */
   backgroundColor?: string;
 
@@ -324,46 +282,19 @@ export interface MJMLHeroAttributes {
   /** Choose if the height is fixed based on the height attribute or fluid. Default value is 'fluid-height' */
   mode?: string;
 
-  /** Padding (supports up to 4 parameters). Default value is '0px' */
-  padding?: string;
-
-  /** Bottom offset. Default value is '0px' */
-  paddingBottom?: string;
-
-  /** Left offset. Default value is '0px' */
-  paddingLeft?: string;
-
-  /** Right offset. Default value is '0px' */
-  paddingRight?: string;
-
-  /** Top offset. Default value is '0px' */
-  paddingTop?: string;
-
   /** Content vertical alignment (top/middle/bottom). Default value is 'top' */
   verticalAlign?: string;
 }
 
-export interface MJMLImageAttributes {
+export interface MJMLImageAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBorderAttributes,
+    MJMLBackgroundAttributes {
   /** Image alignment. Default value is 'center' */
   align?: string;
 
   /** Image description. Default value is '' */
   alt?: string;
-
-  /** CSS border definition. Default value is 'none' */
-  border?: string;
-
-  /** Top CSS border definition. Default value is 'none' */
-  borderTop?: string;
-
-  /** Bottom CSS border definition. Default value is 'none' */
-  borderBottom?: string;
-
-  /** Left CSS border definition. Default value is 'none' */
-  borderLeft?: string;
-
-  /** Right CSS border definition. Default value is 'none' */
-  borderRight?: string;
 
   /** Border radius. Default value is 'n/a' */
   borderRadius?: string;
@@ -385,21 +316,6 @@ export interface MJMLImageAttributes {
 
   /** Specify the link name attribute. Default value is 'n/a' */
   name?: string;
-
-  /** Padding (supports up to 4 parameters). Default value is '10px 25px' */
-  padding?: string;
-
-  /** Bottom offset. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Left offset. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Right offset. Default value is 'n/a' */
-  paddingRight?: string;
-
-  /** Top offset. Default value is 'n/a' */
-  paddingTop?: string;
 
   /** Specify the rel attribute. Default value is 'n/a' */
   rel?: string;
@@ -426,7 +342,10 @@ export interface MJMLImageAttributes {
   width?: string;
 }
 
-export interface MJMLSectionAttributes {
+export interface MJMLSectionAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBorderAttributes,
+    MJMLBackgroundAttributes {
   /** Background color. Default value is 'n/a' */
   backgroundColor?: string;
 
@@ -448,23 +367,8 @@ export interface MJMLSectionAttributes {
   /** Background URL. Default value is 'n/a' */
   backgroundUrl?: string;
 
-  /** Border. Default value is 'none' */
-  border?: string;
-
-  /** Border bottom. Default value is 'n/a' */
-  borderBottom?: string;
-
-  /** Border left. Default value is 'n/a' */
-  borderLeft?: string;
-
   /** Border radius. Default value is 'n/a' */
   borderRadius?: string;
-
-  /** Border right. Default value is 'n/a' */
-  borderRight?: string;
-
-  /** Border top. Default value is 'n/a' */
-  borderTop?: string;
 
   /** CSS class. Default value is 'n/a' */
   cssClass?: string;
@@ -475,26 +379,13 @@ export interface MJMLSectionAttributes {
   /** Full width. Default value is 'n/a' */
   fullWidth?: string;
 
-  /** Padding. Default value is '20px 0' */
-  padding?: string;
-
-  /** Padding bottom. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Padding left. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Padding right. Default value is 'n/a' */
-  paddingRight?: string;
-
-  /** Padding top. Default value is 'n/a' */
-  paddingTop?: string;
-
   /** Text align. Default value is 'center' */
   textAlign?: string;
 }
 
-export interface MJMLSocialAttributes {
+export interface MJMLSocialAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBackgroundAttributes {
   /** Align. Default value is 'center' */
   align?: string;
 
@@ -537,21 +428,6 @@ export interface MJMLSocialAttributes {
   /** Mode. Default value is 'horizontal' */
   mode?: string;
 
-  /** Padding. Default value is '10px 25px' */
-  padding?: string;
-
-  /** Padding bottom. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Padding left. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Padding right. Default value is 'n/a' */
-  paddingRight?: string;
-
-  /** Padding top. Default value is 'n/a' */
-  paddingTop?: string;
-
   /** Icon padding. Default value is '0px' */
   iconPadding?: string;
 
@@ -562,7 +438,9 @@ export interface MJMLSocialAttributes {
   textDecoration?: string;
 }
 
-export interface MJMLSpacerAttributes {
+export interface MJMLSpacerAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBackgroundAttributes {
   /** Container background color. Default value is 'n/a' */
   containerBackgroundColor?: string;
 
@@ -571,24 +449,11 @@ export interface MJMLSpacerAttributes {
 
   /** Height. Default value is '20px' */
   height?: string;
-
-  /** Padding. Default value is 'none' */
-  padding?: string;
-
-  /** Padding bottom. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Padding left. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Padding right. Default value is 'n/a' */
-  paddingRight?: string;
-
-  /** Padding top. Default value is 'n/a' */
-  paddingTop?: string;
 }
 
-export interface MJMLTextAttributes {
+export interface MJMLTextAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBackgroundAttributes {
   /** Text color. Default value is '#000000' */
   color?: string;
 
@@ -625,26 +490,14 @@ export interface MJMLTextAttributes {
   /** Inner element background color. Default value is 'n/a' */
   containerBackgroundColor?: string;
 
-  /** Padding. Default value is '10px 25px' */
-  padding?: string;
-
-  /** Top offset. Default value is 'n/a' */
-  paddingTop?: string;
-
-  /** Bottom offset. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Left offset. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Right offset. Default value is 'n/a' */
-  paddingRight?: string;
-
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
 }
 
-export interface MJMLWrapperAttributes {
+export interface MJMLWrapperAttributes
+  extends MJMLPaddingAttributes,
+    MJMLBorderAttributes,
+    MJMLBackgroundAttributes {
   /** Section color. Default value is 'n/a' */
   backgroundColor?: string;
 
@@ -667,43 +520,15 @@ export interface MJMLWrapperAttributes {
   backgroundUrl?: string;
 
   /** CSS border format. Default value is 'none' */
-  border?: string;
-
-  /** CSS border format for the bottom. Default value is 'n/a' */
-  borderBottom?: string;
-
-  /** CSS border format for the left. Default value is 'n/a' */
-  borderLeft?: string;
 
   /** Border radius. Default value is 'n/a' */
   borderRadius?: string;
-
-  /** CSS border format for the right. Default value is 'n/a' */
-  borderRight?: string;
-
-  /** CSS border format for the top. Default value is 'n/a' */
-  borderTop?: string;
 
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
 
   /** Make the wrapper full-width. Default value is 'n/a' */
   fullWidth?: string;
-
-  /** Padding. Default value is '20px 0' */
-  padding?: string;
-
-  /** Section bottom offset. Default value is 'n/a' */
-  paddingBottom?: string;
-
-  /** Section left offset. Default value is 'n/a' */
-  paddingLeft?: string;
-
-  /** Section right offset. Default value is 'n/a' */
-  paddingRight?: string;
-
-  /** Section top offset. Default value is 'n/a' */
-  paddingTop?: string;
 
   /** CSS text-align. Default value is 'center' */
   textAlign?: string;

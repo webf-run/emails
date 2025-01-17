@@ -112,9 +112,6 @@ export interface MJMLAccordionAttributes
   extends MJMLPaddingAttributes,
     MJMLBorderAttributes,
     MJMLBackgroundAttributes {
-  /** Background-color of the cell. Default value is 'n/a' */
-  containerBackgroundColor?: string;
-
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
 
@@ -151,9 +148,6 @@ export interface MJMLCarouselAttributes
     MJMLBackgroundAttributes {
   /** Horizontal alignment. Default value is 'center' */
   align?: string;
-
-  /** Column background color. Default value is 'none' */
-  containerBackgroundColor?: string;
 
   /** Border radius. Default value is 'n/a' */
   borderRadius?: string;
@@ -193,9 +187,6 @@ export interface MJMLColumnAttributes
   extends MJMLPaddingAttributes,
     MJMLBorderAttributes,
     MJMLBackgroundAttributes {
-  /** Background color for a column. Default value is 'n/a' */
-  backgroundColor?: string;
-
   /** Requires a padding, inner background color for column. Default value is 'n/a' */
   innerBackgroundColor?: string;
 
@@ -245,9 +236,6 @@ export interface MJMLDividerAttributes
   /** Divider's border width. Default value is '4px' */
   borderWidth?: string;
 
-  /** Inner element background color. Default value is 'n/a' */
-  containerBackgroundColor?: string;
-
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
 
@@ -258,9 +246,6 @@ export interface MJMLDividerAttributes
 export interface MJMLHeroAttributes
   extends MJMLPaddingAttributes,
     MJMLBackgroundAttributes {
-  /** Hero background color. Default value is '#ffffff' */
-  backgroundColor?: string;
-
   /** Height of the image used (mandatory). Default value is 'none' */
   backgroundHeight?: string;
 
@@ -298,9 +283,6 @@ export interface MJMLImageAttributes
 
   /** Border radius. Default value is 'n/a' */
   borderRadius?: string;
-
-  /** Inner element background color. Default value is 'n/a' */
-  containerBackgroundColor?: string;
 
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
@@ -346,9 +328,6 @@ export interface MJMLSectionAttributes
   extends MJMLPaddingAttributes,
     MJMLBorderAttributes,
     MJMLBackgroundAttributes {
-  /** Background color. Default value is 'n/a' */
-  backgroundColor?: string;
-
   /** Background position. Default value is 'top center' */
   backgroundPosition?: string;
 
@@ -398,9 +377,6 @@ export interface MJMLSocialAttributes
   /** CSS class. Default value is 'n/a' */
   cssClass?: string;
 
-  /** Container background color. Default value is 'n/a' */
-  containerBackgroundColor?: string;
-
   /** Font family. Default value is 'Ubuntu, Helvetica, Arial, sans-serif' */
   fontFamily?: string;
 
@@ -441,9 +417,6 @@ export interface MJMLSocialAttributes
 export interface MJMLSpacerAttributes
   extends MJMLPaddingAttributes,
     MJMLBackgroundAttributes {
-  /** Container background color. Default value is 'n/a' */
-  containerBackgroundColor?: string;
-
   /** CSS class. Default value is 'n/a' */
   cssClass?: string;
 
@@ -487,9 +460,6 @@ export interface MJMLTextAttributes
   /** Align. Default value is 'left' */
   align?: string;
 
-  /** Inner element background color. Default value is 'n/a' */
-  containerBackgroundColor?: string;
-
   /** Class name, added to the root HTML element created. Default value is 'n/a' */
   cssClass?: string;
 }
@@ -498,9 +468,6 @@ export interface MJMLWrapperAttributes
   extends MJMLPaddingAttributes,
     MJMLBorderAttributes,
     MJMLBackgroundAttributes {
-  /** Section color. Default value is 'n/a' */
-  backgroundColor?: string;
-
   /** CSS background position (see outlook limitations in mj-section doc). Default value is 'top center' */
   backgroundPosition?: string;
 

@@ -19,7 +19,7 @@ For TypeScript support, the library supports the automatic JSX runtime. To confi
 }
 ```
 
-## Contriubtion - Local setup
+## Contribution - Local setup
 
 Use the following script to run local development setup:
 

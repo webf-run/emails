@@ -65,7 +65,7 @@ describe('render/buildTree()', () => {
           <section>
             <column>
               <text>Text 1</text>
-              <text fontSize={14}>Text 2</text>
+              <text fontSize={'14px'}>Text 2</text>
             </column>
           </section>
         </body>
@@ -102,7 +102,7 @@ describe('render/buildTree()', () => {
                       {
                         tagName: 'mj-text',
                         attributes: {
-                          'font-size': 14,
+                          'font-size': '14px',
                         },
                         content: 'Text 2',
                       },
@@ -202,7 +202,7 @@ describe('render/buildEndingTagContent()', () => {
           paddingLeft='30px'
           paddingRight='40px'
         >
-          <span cssClass={'hello'}>My Text Content</span>
+          <span class={'hello'}>My Text Content</span>
         </text>
       );
 

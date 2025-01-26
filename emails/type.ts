@@ -43,6 +43,35 @@ export interface MJMLBackgroundAttributes {
   containerBackgroundColor?: string;
 }
 
+export interface MJMLHtmlAttributes {}
+
+export interface MJMLPreviewAttributes {
+  children?: string;
+}
+
+export interface MJMLTitleAttributes {
+  children?: string;
+}
+
+export interface MJMLFontAttributes {
+  /** URL of a hosted CSS file . */
+  href: string;
+
+  /** The `name` of the font. */
+  name: string;
+}
+
+export interface MJMLStyleAttributes {
+  inline?: string;
+  children?: string;
+}
+
+export interface MJMLBreakpointAttributes {
+  width: string;
+}
+
+export interface MJMLRawAttributes {}
+
 export interface MJMLButtonAttributes
   extends MJMLPaddingAttributes,
     MJMLBorderAttributes,

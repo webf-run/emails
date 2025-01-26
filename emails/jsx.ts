@@ -1,14 +1,22 @@
 import type {
   MJMLAccordionAttributes,
+  MJMLBreakpointAttributes,
   MJMLButtonAttributes,
   MJMLCarouselAttributes,
   MJMLColumnAttributes,
   MJMLDividerAttributes,
+  MJMLFontAttributes,
+  MJMLHeroAttributes,
+  MJMLHtmlAttributes,
   MJMLImageAttributes,
+  MJMLPreviewAttributes,
+  MJMLRawAttributes,
   MJMLSectionAttributes,
   MJMLSocialAttributes,
   MJMLSpacerAttributes,
+  MJMLStyleAttributes,
   MJMLTextAttributes,
+  MJMLTitleAttributes,
   MJMLWrapperAttributes,
 } from './type.js';
 
@@ -31,9 +39,24 @@ export namespace JSX {
     head: MJMLHeadAttributes;
     body: MJMLBodyAttributes;
 
-    // MJML Head elements
+    /// MJML Head elements
+
+    /**
+     * Inside the attibutes, any tag a tag citing one MJML component (like `mj-text`; see example) overrides
+     * default settings for listed MJML attributes on the one component.
+     **/
     attributes: MJMLAttributes;
+
+    /** The `<breakpoint />` allows you to control on which breakpoint the layout should go desktop/mobile. */
     breakpoint: MJMLBreakpointAttributes;
+
+    /** This tag allows you to add custom attributes on any html tag of the generated html, using css selectors. */
+    'html-attributes': MJMLHtmlAttributes;
+
+    /**
+     * This tag imports fonts. The tag has effect only if the template uses the font.
+     * The href attribute points to a hosted css file; that file contains a @font-face declaration.
+     * */
     font: MJMLFontAttributes;
     preview: MJMLPreviewAttributes;
     style: MJMLStyleAttributes;
@@ -61,61 +84,40 @@ export namespace JSX {
     wrapper: MJMLWrapperAttributes;
 
     // HTML Tags
-    a: MJMLCommonAttributes;
-    span: MJMLCommonAttributes;
+    a: {
+      class?: string;
+    };
+    span: {
+      class?: string;
+    };
     hr: any;
   }
 
-  // Common Attributes
-  interface MJMLCommonAttributes {
-    cssClass?: string;
-    padding?: string | number;
-    paddingTop?: string | number;
-    paddingBottom?: string | number;
-    paddingLeft?: string | number;
-    paddingRight?: string | number;
+  export interface MJMLAttributes {
+    /**
+     * If set to "desktop", switch force desktop version for older (self-hosted) version of Outlook.com
+     * that doesn't support media queries.
+     * */
+    owa?: 'desktop';
+
+    /** used as `<html lang="">` attribute. Default is not set */
+    lang?: string;
+
+    /** Used as <html dir=""> attribute. Default is `auto`. */
+    dir?: 'ltr' | 'rtl' | 'auto';
   }
 
   // Structural Attributes
-  export interface MJMLBodyAttributes extends MJMLCommonAttributes {
-    width: string;
-    backgroundColor?: string;
-  }
-
   export interface MJMLHeadAttributes {}
 
-  export interface MJMLAttributes {}
-
-  // Head Attributes
-  export interface MJMLPreviewAttributes {
-    children?: string;
-  }
-
-  export interface MJMLTitleAttributes {
-    children?: string;
-  }
-
-  export interface MJMLFontAttributes {
-    href: string;
-    name: string;
-  }
-
-  export interface MJMLStyleAttributes {
-    inline?: string;
-    children?: string;
-  }
-
-  export interface MJMLBreakpointAttributes {
-    width: string;
-  }
-
-  export interface MJMLHeroAttributes extends MJMLCommonAttributes {
+  export interface MJMLBodyAttributes {
+    /** The general background color */
     backgroundColor?: string;
-    backgroundHeight?: string | number;
-    backgroundWidth?: string | number;
-    textAlign?: 'left' | 'center' | 'right';
+
+    /** The class name, added to the root HTML element created */
+    class?: string;
+
+    /** The width of the email. Default is `600px`. */
+    width?: string;
   }
-
-  export interface MJMLRawAttributes {}
-
 }

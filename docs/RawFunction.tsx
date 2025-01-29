@@ -13,13 +13,14 @@ export const CodeBlock: React.FC<{ language: string; children: string }> = ({
   </pre>
 );
 
-export function DisplayRawFile({
-  rawFile,
-  functionName,
-}: {
+export type DisplayRawFileProps = {
   rawFile: string;
   functionName: string;
-}) {
+  className?: string;
+};
+
+export function DisplayRawFile(props: DisplayRawFileProps) {
+  const { rawFile, functionName, className } = props;
   const codeRef = useRef<HTMLElement>(null);
 
   const code = extractFunction(rawFile, functionName);
@@ -31,9 +32,14 @@ export function DisplayRawFile({
 
   return (
     <pre>
-      <code ref={codeRef}>{code}</code>
+      <code
+        ref={codeRef}
+        style={{
+          borderRadius: '5px',
+        }}
+      >
+        {code}
+      </code>
     </pre>
   );
-
-  // return <CodeBlock language='javascript'>{code}</CodeBlock>;
 }

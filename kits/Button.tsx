@@ -16,6 +16,7 @@ export type ButtonProps = {
     fontStyle?: string;
     fontWeight?: number;
     height?: string;
+    width?: string;
     innerPadding?: string;
     letterSpacing?: string;
     lineHeight?: string;

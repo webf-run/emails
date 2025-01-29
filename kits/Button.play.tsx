@@ -9,6 +9,7 @@ export function ButtonPlay1() {
             <Button
               href='/hello'
               style={{
+                width: '100%',
                 backgroundColor: '#1A1A1A',
                 color: '#FFFFFF',
                 fontSize: '14px',
@@ -16,31 +17,7 @@ export function ButtonPlay1() {
                 borderRadius: '4px',
               }}
             >
-              Small Screen Button
-            </Button>
-            <Button
-              href='/hello'
-              style={{
-                backgroundColor: '#1A1A1A',
-                color: '#FFFFFF',
-                fontSize: '16px',
-                padding: '12px 24px',
-                borderRadius: '4px',
-              }}
-            >
-              Medium Screen Button
-            </Button>
-            <Button
-              href='/hello'
-              style={{
-                backgroundColor: '#1A1A1A',
-                color: '#FFFFFF',
-                fontSize: '18px',
-                padding: '14px 28px',
-                borderRadius: '4px',
-              }}
-            >
-              Large Screen Button
+              Get Started
             </Button>
           </column>
         </section>

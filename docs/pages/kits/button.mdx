@@ -4,11 +4,9 @@ import rawButtonPlay1 from '!!raw-loader!../../../kits/Button.play.js';
 
 import { ButtonPlay1 } from '../../../kits/Button.play.js';
 import { Playground } from '../../Playground.js';
-import { DisplayRawFile } from '../../RawFunction.js';
 
-<Playground component={ButtonPlay1} />
-
-<DisplayRawFile
-  rawFile={rawButtonPlay1.toString()}
-  functionName='ButtonPlay1'
+<Playground
+  component={ButtonPlay1}
+  label='Single Button'
+  rawFunction={rawButtonPlay1.toString()}
 />
